@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<title>Swiper demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+        <a href="#" class="logo">
+            <div href="#"><img class="white" src="images/logo.png" alt="한양대학교"></div>
+            <div href="#"><img class="color" src="images/logo2.png" alt="한양대학교"></div>
+        </a>
+        <ul class="gnb">
+            <li><a href="#">학부 소개</a>
+                <ul class="submenu">
+                    <li><a href="#">인사말</a></li>
+                    <li><a href="#">교육목표</a></li>
+                    <li><a href="#">오시는길</a></li>
+                    
+                </ul>
+            </li>
+            <li><a href="#">전공 소개</a>
+                <ul class="submenu">
+                    <li><a href="#">스포츠매니지먼트 전공</a></li>
+                    <li><a href="#">스포츠사이언스 전공</a></li>
+                    <li><a href="#">입학안내</a></li>
+                    <li><a href="#">학사일정</a></li>
+                </ul>
+            </li>
+            <li><a href="#">교수진 소개</a></li>
+            <li><a href="#">대학원</a>
+                <ul class="submenu">
+                    <li><a href="#">글로벌스포츠산업전공</a></li>
+                    <li><a href="#">체육전공</a></li>
+                    <li><a href="#">교육대학원</a></li>
+                    <li><a href="#">입학안내</a></li>
+                    <li><a href="#">학사일정</a></li>
+                </ul>
+            </li>
+            <li><a href="#">연구</a>
+                <ul class="submenu">
+                    <li><a href="#">연구활동</a></li>
+                    <li><a href="#">산악협력소개</a></li>
+                    <li><a href="#">시설소개</a></li>
+                </ul>
+            </li>
+            <li><a href="#">게시판</a>
+                <ul class="submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">취업정보</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">미디어</a></li>
+                </ul>
+            </li>
+            <li><a href="#">동문소식</a></li>
+        </ul>
+        <div class="quick_gnb">
+            <li><a href="#" class="home-under">HOME</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </div>
+        <button class="ham-menu open">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+        <button class="ham-menu close">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+    </div>
+
+    <div class="submenu-bg"></div>    
+    </header>
+
+    <div class="tab_mo_menu">
+        <ul class="tab_mo_gnb">
+            <li class="menu menu1">
+                <a href="#" class="tab">학부 소개</a>
+                <ul class="tab_mo_submenu">
+                    <li><a href="#">학과장 인사말</a></li>
+                    <li><a href="#">교육목표</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="menu menu2">
+                <a href="#" class="tab">전공 소개
+                    <span class="btn btn_down"></span>
+                    <span class="btn btn_up"></span>
+                </a>
+                <ul class="tab_mo_submenu">
+                    <li><a href="#">스포츠매니지먼트 전공</a></li>
+                    <li><a href="#">스포츠사이언스 전공</a></li>
+                    <li><a href="#">입학안내</a></li>
+                    <li><a href="#">학사일정</a></li>
+                </ul>
+            </li>
+            <li class="menu menu3">
+                <a href="#" class="tab">교수진 소개
+                    <span class="btn btn_down"></span>
+                    <span class="btn btn_up"></span>
+                </a>
+                <ul class="tab_mo_submenu">
+                    <li><a href="#">교수진 소개</a></li>
+                </ul>
+            </li>
+            <li class="menu menu4">
+                <a href="#" class="tab">대학원
+                    <span class="btn btn_down"></span>
+                    <span class="btn btn_up"></span>
+                </a>
+                <ul class="tab_mo_submenu">
+                    <li><a href="#">글로벌스포츠산업전공</a></li>
+                    <li><a href="#">체육전공</a></li>
+                    <li><a href="#">교육대학원</a></li>
+                    <li><a href="#">입학안내</a></li>
+                    <li><a href="#">학사일정</a></li>
+                </ul>
+            </li>
+            <li class="menu menu5">
+                <a href="#" class="tab">연구
+                    <span class="btn btn_down"></span>
+                    <span class="btn btn_up"></span>
+                </a>
+                <ul class="tab_mo_submenu">
+                    <li><a href="#">연구활동</a></li>
+                    <li><a href="#">산학협력소개</a></li>
+                    <li><a href="#">시설소개</a></li>
+                </ul>
+            </li>
+            <li class="menu menu6">
+                <a href="#" class="tab">게시판
+                    <span class="btn btn_down"></span>
+                    <span class="btn btn_up"></span>
+                </a>
+                <ul class="tab_mo_submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">갤러리</a></li>
+                    <li><a href="#">취업정보</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">미디어</a></li>
+                </ul>
+            </li>
+            <li class="menu menu7">
+                <a href="#" class="tab">동문소식
+                    <span class="btn btn_down"></span>
+                    <span class="btn btn_up"></span>
+                </a>
+                <ul class="tab_mo_submenu">
+                    <li><a href="#">동문소식</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="line">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="scroll_btn down_btn">
+        <p>SCROLL</p>
+        <div class="icon"></div>
+    </div>
+    <div class="scroll_btn top_btn">
+        <p>TOP</p>
+        <div class="icon"></div>
+    </div>
+    <div class="scroll_btn top_black">
+        <p>TOP</p>
+        <div class="icon"></div>
+    </div>
+	<!-- Swiper -->
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+			<div class="swiper-slide section section1">
+                <div class="sec_info">
+                    <p><em>HOME</em></p>
+                    <span class="num"><em>01</em></span>
+                </div>
+                <div class="section-wrap">    
+                    <div class="bg"></div>
+                    <div class="tit">
+                        <strong>
+                            <span><em>Training professionals necessary</em></span>
+                            <span><em>for the global sports industry</em></span>
+                        </strong>
+                        <p>지식과 지혜가 융합된 글로벌 스포츠현장 지향의 실용 교육을 구현합니다.</p>
+                    </div>
+                    <div class="main_paging">
+                        <div class="main_arrow">
+                            <button class="main_prev" type="button" tabindex="0" role="button" aria-label="Previous slide"></button>
+                            <button class="main_next" type="button" tabindex="0" role="button" aria-label="Next slide"></button>
+                        </div>
+                        <div class="main_pagination swiper-pagination-custom"><span class="current">01</span><span class="total">01</span></div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="swiper-slide section section2">
+                <div class="sec_info">
+                    <p><em>MAJOR</em></p>
+                    <span class="num"><em>02</em></span>
+                </div>
+                <div class="section-wrap">
+                <div class="title_group">
+                    <strong class="section_title">
+                        <em>전공소개</em>
+                    </strong>
+                </div>
+                <div class="contents_wrap">
+                    <div class="cont cont1">
+                        <div class="bg"></div>
+                        <div class="cont_text">
+                            <strong>스포츠매니지먼트</strong>
+                            <p>
+                                스포츠 경영, 정책, 리서치 등의 분야에 필요한<br class="pc_only">
+                                전문적이고 상업적 지식을 갖춘 인재를 양성합니다. 
+                            </p>
+                            <div class="btn">
+                                <a href="#"><p>VIEW MORE</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont cont2">
+                        <div class="bg"></div>
+                        <div class="cont_text">
+                            <strong>스포츠사이언스</strong>
+                            <p>
+                                스포츠를 과학적으로 접근, 분석하여<br class="pc_only">
+                                가장 이상적인 스포츠 활동을 추구하고 실현합니다.
+                            </p>
+                            <div class="btn">
+                                <a href="#"><p>VIEW MORE</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <div class="swiper-slide section section3">
+            <div class="sec_info">
+                <p><em>GRADUATE SCHOOL</em></p>
+                <span class="num"><em>03</em></span>
+            </div>
+            <div class="section-wrap">
+            <div class="title_group">
+                <strong class="section_title">
+                    <em>대학원</em>
+                </strong>
+            </div>
+            <div class="section3_cont_wrap">
+                <ul class="contents">
+                    <li>
+                        <a href="#">
+                            <div class="bg"></div>
+                            <div class="text_g">
+                                <div class="icon">
+                                    <img src="images/sec3_icon1.png" alt="아이콘 이미지1">
+                                </div>
+                                <div class="text">
+									<strong>글로벌스포츠산업전공</strong>
+									<p>
+										스포츠 외교 및 행정, 마케팅, 언론, IT 등 스포츠 관련 산업을<br class="pc_only">
+										이끌어 나갈 국제 스포츠 전문인력 양성합니<br class="pc_only tab_only">다.
+									</p>
+									<div class="btn">
+										<p><em>VIEW MORE</em></p>
+										<img src="images/btn_pointer.png" alt="버튼 화살표 이미지">
+									</div>
+								</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="bg"></div>
+                            <div class="text_g">
+                                <div class="icon">
+                                    <img src="images/sec3_icon2.png" alt="아이콘 이미지2">
+                                </div>
+                                <div class="text">
+									<strong>체육전공</strong>
+									<p>
+										스포츠 전문적인 지식의 습득 및 기능향상에 전력하여 <br class="pc_only">
+										스포츠 지도 분야의 다능적 인재로 성장합니<br class="pc_only">다.
+									</p>
+									<div class="btn">
+										<p><em>VIEW MORE</em></p>
+										<img src="images/btn_pointer.png" alt="버튼 화살표 이미지">
+									</div>
+								</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="bg"></div>
+                            <div class="text_g">
+                                <div class="icon">
+                                    <img src="images/sec3_icon3.png" alt="아이콘 이미지3">
+                                </div>
+                                <div class="text">
+									<strong>교육대학원</strong>
+									<p>
+									학교 체육 및 스포츠 교육의 이론을 통하여 체육 및 스포츠 <br class="pc_only">
+									교육과 문화를 높이며 전인적인 인간 교육을 <br class="pc_only">이<br class="tab_only">행합니다.
+									</p>
+									<div class="btn">
+										<p><em>VIEW MORE</em></p>
+										<img src="images/btn_pointer.png" alt="버튼 화살표 이미지">
+									</div>
+								</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+	    <div class="swiper-slide section section4">
+        <div class="sec_info">
+            <p><em>RESEARCH</em></p>
+            <span class="num"><em>04</em></span>
+        </div>
+        <div class="bg"></div>
+        <div class="section-wrap">    
+            <div class="title_group">
+                <strong class="section_title">
+                    <em>연구</em>
+                </strong>
+            </div>
+            <div class="tit">
+                <strong>
+                    <em>Sports Science Research</em>
+                </strong>
+                <b>연구와 탐구를 통해 새로운 스포츠 과학의 지평을 열겠습니다.</b>
+                <p>스포츠 산업의 여러 분야에 대한 접근을 통하여 지식을 탐구하며 역량을 향상시켜<br class="pc_only">
+                실무형 스포츠 산업 인재를 양성하는 것을 목적으로 합니다.
+                </p>
+                <div class="btn">
+                    <a href="#"><p>VIEW MORE</p></a>
+                </div>
+            </div>
+      
+        </div>
+        </div>
+
+        <div class="swiper-slide section section5">
+            <div class="sec_info">
+                <p><em>NOTICE & NEWS</em></p>
+                <span class="num"><em>05</em></span>
+            </div>
+            <div class="cont cont1">
+                <div class="title_group">
+                    <strong class="section_title">
+                        <em>동문소식</em>
+                    </strong>
+                    <b class="sub_title">
+                        <span><em>Alaumni</em></span>
+                        <span><em>news</em></span>
+                    </b>
+                    <p>한양대 스포츠학과 동문 소식입니다.</p>
+                </div>
+                <div class="interview_wrap">
+                    <ul>
+                        <li>
+                            <a href="#">
+								<div class="int_img_wrap"></div>
+								<div class="text_wrap">
+									<span class="box_title">인터뷰</span>									<strong class="interview_test">인터뷰 test</strong>
+									<span class="date">2022-05-02</span>
+									<div class="more_btn"></div>
+								</div>
+							</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cont cont2">
+                <div class="title_group">
+                    <strong class="section_title">
+                        <em>공지사항 & 뉴스</em>
+                    </strong>
+                    <b class="sub_title">
+                        <span><em>Notice</em></span>
+                        <span><em>& news</em></span>
+                    </b>
+                    <p>최신 정보와 뉴스를 만나보세요.</p>
+                </div>
+                <div class="notice_wrap">
+                    <ul>
+                        <li>
+                            <a href="#">
+								<div class="date">
+									<b class="day">02</b>
+									<span class="ym">2022.05</span>
+								</div>
+                                <div class="text_wrap">
+									<div class="notice_tit_wrap">
+										<strong class="tit">공지사항</strong>
+									</div>
+									<p class="text">test</p>
+								</div>
+                                <div class="more_btn"></div>
+							</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    
+
+            <div class="swiper-slide footer" id="footer">
+                    <div class="footer-wrap">
+                            
+                        <div class="foot-t">
+                            <div class="foot-t-wrap">
+                                <div class="logo">
+                                <img src="images/foot_logo.png" alt="하단로고이미지">
+                                </div>
+                                <div class="f-text">
+                                    <div class="address">
+                                    Address. 서울특별시 성동구 왕십리로 222 한양대학교 올림픽체육관 스포츠산업학과
+                                    </div>
+                                    <ul class="info">
+                                    <li>Tel : 02)2220-2708</li>
+                                    <li>Fax : 02)2220-4656 </li>
+                                    <li>E-mail : hyusports@gmail.com</li>
+                                    </ul>
+                                    <div class="c-right">
+                                    © 2021 Hanyang university department of sports industry. All rights reserved.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="sns">
+                                <a href="#"><img src="images/facebook.png" alt="페이스북 이미지"></a>
+                                <a href="#"><img src="images/twitter.png" alt="트위터 이미지"></a>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+ 
+		<!-- Add Pagination -->
+		<div class="swiper-pagination"></div>
+</div>
+
+
+	<!-- Swiper JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+	<!-- Initialize Swiper -->
+	<script>
+//         $(document).ready(function(){
+//     var swiper = new Swiper('.swiper-container', {
+//         direction: 'vertical',
+//         slidesPerView: 'auto',
+//         spaceBetween: 10,
+//         mousewheel: true,
+//         pagination: {
+//             el: '.swiper-pagination',
+//             clickable: true,
+//         },
+//     });
+// });
+    // $(".section1").addClass("zoom");
+    //     console.log("zoom됨");
+
+    //         $("header .header-wrap .gnb").mouseenter(function(){
+    //         $(".logoImg").attr("src", "images/logo2.png");
+    //         $("header").css("background-color", "white");
+    //         $(" header .header-wrap .gnb li a").css("color","black");
+    //         $(" header .header-wrap .quick_gnb li a").css("color","black");
+    //         $(" header .header-wrap .gnb .submenu").css({"display":"block", "height":"92px"});
+    //         // $(".submenu-bg").css("display","block")
+    //         $(".submenu-bg").slideDown(500)
+    //         $(".header .header-wrap .gnb .submenu").slideDown(500).stop()
+    //     });
+
+    //     $("header .header-wrap .gnb .submenu").mouseleave(function(){
+    //         $(".logoImg").attr("src", "images/logo.png");
+    //         $("header").css("background", "none");
+    //         $(" header .header-wrap .gnb li a").css("color","white");
+    //         $(" header .header-wrap .quick_gnb li a").css("color","white");
+    //         $(" header .header-wrap .gnb .submenu").css({"display":"none", "height":"0"} )
+    //         // $(".submenu-bg").css("display","none")
+    //         $(".submenu-bg").slideUp(500)
+    //         $(".header .header-wrap .gnb .submenu").slideUp(500).stop()
+    //     });
+        
+    //     $(".section3 .btn").mouseenter(function(){
+    //             //그 함수는 섹션3의 버튼에 on이라는 클래스를 추가한다
+    //             $(".section3 .btn").addClass("on");
+    //         });
+
+        
+	</script>
+</body>
+
+</html>
